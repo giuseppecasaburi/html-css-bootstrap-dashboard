@@ -55,37 +55,50 @@
             <h2 class="py-4">Nuovo libro</h2>
             <form action="">
                 <div class="row">
-                    <div class="col">
-                        <label for="username">Nome Autore</label>
-                        <input type="text" name="username" placeholder="Inserisci il nome dell'autore">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Nome Autore</label>
+                            <input type="text" class="form-control" name="username" placeholder="Inserisci il nome dell'autore">
+                          </div>
                     </div>
-                    <div class="col">
-                        <label for="surname">Cognome Autore</label>
-                        <input type="text" name="surname" placeholder="Inserisci il cognome dell'autore">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="surname" class="form-label">Cognome Autore</label>
+                            <input type="text" class="form-control" name="surname" placeholder="Inserisci il cognome dell'autore">
+                          </div>
                     </div>
-                    <div class="col-sm-12">
-                        <label for="generi">Genere</label>
-                        <select name="generi" id="generi-libri">
-                            <option value="">Horror</option>
-                            <option value="">Drammatico</option>
-                            <option value="">Romantico</option>
-                            <option value="">Saggio</option>
-                        </select>
+                    <div class="mb-3 col-lg-12">
+                        <label for="book-title" class="form-label">Titolo</label>
+                        <input type="text" class="form-control" name="book-title" placeholder="Inserisci il titolo del libro">
+                      </div>
+                    <div class="col-lg-4 mb-3">
+                        <label for="genere-select">Genere</label>
+                        <select class="form-select" name="genere-select">
+                            <option selected>--Scegli il genere--</option>
+                            <option value="1">Horror</option>
+                            <option value="2">Giallo</option>
+                            <option value="3">Saggio</option>
+                          </select>
                     </div>
-                    <div class="col-sm-12">
-                        <label for="date-public">Anno di pubblicazione</label>
-                        <input type="date" name="date-public" id="">
+                    <div class="col-lg-4 mb-3">
+                        <label for="date-public">Anno di pubblicazione</label><br>
+                        <input type="date" name="date-public" class="form-select">
                     </div>
-                    <div class="col-sm-12">
-                        <label for="isbn#">ISBN#</label>
-                        <input type="text" name="isbn#" id="" placeholder="Inserisci il codice ISBN#">
+                    <div class="col-lg-4 mb-3">
+                        <label for="ibsn#" class="form-label">IBSN#</label>
+                        <input type="text" class="form-control" name="ibsn#" placeholder="Inserisci il codice IBSN# del libro">
                     </div>
-                    <div class="border border-secondary border-2 opacity-50"></div>
-                    <div class="col-sm-12">
-                        <label for="area-note">Note</label>
-                        <textarea name="area-note" id="note" placeholder="Inserisci eventuali note sul libro"></textarea>
+                    <div class="border border-secondary border-1 opacity-25 my-4"></div>
+                    <div class="col-sm-12 mb-3">
+                        <label for="text-area">Note</label>
+                        <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" name="text-area"></textarea>
+                    </div>
+                    <div class="col mb-3">
+                        <input class="form-check-input" type="checkbox" value="" name="digital-version">
+                        <label class="form-check-label" for="digital-version">Disponibile anche in digitale</label>
                     </div>
                 </div>
+                <button type="button" class="btn btn-primary mb-3">Aggiungi libro</button>
             </form>
         </div>
     </main>
