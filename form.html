@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav text-capitalize">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Catalogo libri</a>
+                            <a class="nav-link active text-white" aria-current="page" href="./bonus.html">Catalogo libri</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Anagrafica utenti</a>
@@ -48,5 +48,47 @@
         </nav>
     </section>
     <!-- /NAVIGATION BAR -->
+
+    <!-- MAIN SECTION -->
+    <main>
+        <div class="container">
+            <h2 class="py-4">Nuovo libro</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <label for="username">Nome Autore</label>
+                        <input type="text" name="username" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col">
+                        <label for="surname">Cognome Autore</label>
+                        <input type="text" name="surname" placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="generi">Genere</label>
+                        <select name="generi" id="generi-libri">
+                            <option value="">Horror</option>
+                            <option value="">Drammatico</option>
+                            <option value="">Romantico</option>
+                            <option value="">Saggio</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="date-public">Anno di pubblicazione</label>
+                        <input type="date" name="date-public" id="">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="isbn#">ISBN#</label>
+                        <input type="text" name="isbn#" id="" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                    <div class="border border-secondary border-2 opacity-50"></div>
+                    <div class="col-sm-12">
+                        <label for="area-note">Note</label>
+                        <textarea name="area-note" id="note" placeholder="Inserisci eventuali note sul libro"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- /MAIN SECTION -->
 </body>
 </html>
